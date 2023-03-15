@@ -175,12 +175,19 @@
   - 아래 화면에서 "서버주소(안전하지 않음)(으)로 이동" 링크 클릭
   - ![image](https://user-images.githubusercontent.com/87741912/147376538-a338f52e-86f1-4a32-8796-c3baee18d230.png)
   - ![image](https://user-images.githubusercontent.com/87741912/147376556-bcf43b90-3191-4a98-b49e-68f9696fc574.png)
-  - 아래 화면과 같이 "약관동의" 화면이 정상적으로 보이면 정상적으로 실행되는 것 입니다.
-  - 아래 화면처럼 iframe으로 KYC 서비스 모바일웹에 전체화면(width:100%, height:100%, border: none)으로 iframe으로 연동이 됩니다.
-  - ![image](https://user-images.githubusercontent.com/87741912/147376596-8c633ab2-6ad9-4d7e-a886-3a258e893e29.png)
+  - 아래 화면과 같이 "KYC 시작 화면"이 보이면 정상적으로 실행되는 것 입니다.
+  - 아래 화면처럼 KYC 서비스 모바일웹이 전체화면(width:100%, height:100%, border: none)에 iframe으로 연동이 됩니다.
+  - (1.필수정보입력UI 사용하는 경우, 2.필수정보입력UI 미사용, 신분증 인증 사용하는 경우, 3.필수정보입력UI 미사용, 1원 계좌인증 사용하는 경우)
+  - ![1](https://user-images.githubusercontent.com/112049329/225201442-16b1bffc-bdb5-44cc-a901-83ff41bdab29.png)
+  - ![2](https://user-images.githubusercontent.com/112049329/225201479-7818beb6-45bc-4bc9-983f-adce1d77429d.jpg)
+  - ![3](https://user-images.githubusercontent.com/112049329/225201487-8ff5e5ad-d8f7-4286-9384-7cdabf8a4961.jpg)
 ---
 - Step 5) DEBUG 윈도우
   - 테스트를 진행하시면서 iframe 내에서 동작하는 KYC 서비스에서 특정 이벤트("KYC 인증 성공" 또는 "실패", "사용자 종료(중도이탈 등)")가 발생되면 postMessage 방식으로 그 결과를 전달합니다.
   - postMessage로 전달된 데이터(json 형식)를 DEBUG 윈도우를 통해 확인할 수 있습니다.
   - ![image](https://user-images.githubusercontent.com/87741912/224627552-0ad26b5b-f039-4b68-89be-1df2b95e3751.png)
+---
+- useB.eKYC 연동개발가이드
+  - 보다 상세한 연동 개발 가이드는 아래 링크를 활용해주세요.
+  - https://reg-tech-useb.notion.site/useB-eKYC-v1-2-1-48810e17c1e04b96955090a95e242218
 ---
